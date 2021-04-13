@@ -30,3 +30,39 @@
 | DELETE | /resources/:id      | resources#destroy | `Resource.find(id)` AND `Resource.destroy` |
 
 [More info REST pattern in Wiki ](https://en.wikipedia.org/wiki/Representational_state_transfer)
+
+## Exercices
+
+### 1. Model
+
+#### Create Pet model with the following attributes:
+
+- a name
+- the address it was found at
+- a species (string)
+- the date it was found on
+
+#### Add some validations in your model:
+
+- the name should be present
+- the species should be dog cat rabbit snake or turtle
+
+#### Adds seed
+
+### 2 . Install Simple form
+
+[Instructions here](https://github.com/heartcombo/simple_form)
+
+### 3. Index
+
+### 4. Show
+
+### 5. New
+
+### 6. Edit
+
+### 7. Delete
+
+
+
+
