@@ -19,14 +19,14 @@
 
 ## RESTful routes
 
-| HTTP verb | Controller action |  ActiveRecord method |
-|--------|---------|---|
-| GET    | index   | `.all` |
-| GET    | show    | `.find(id)` |
-| GET    | new     | `.new` |
-| POST   | create  | `.create(attributes)` |
-| GET    | edit    | `.find(id)` |
-| PATCH  | update  | `.find(id)` AND `.update(attributes)` |
-| DELETE | destroy | `.find(id)` AND `.destroy` |
+| HTTP verb | Routes | Controller action |  ActiveRecord method |
+|--------|---|---|---|
+| GET    | /resources          | resources#index   | `Resource.all` |
+| GET    | /resources/:id/     | resources#show    | `Resource.find(id)` |
+| GET    | /resources/new      | resources#new     | `Resource.new` |
+| POST   | /resources          | resources#create  | `Resource.create(attributes)` |
+| GET    | /resources/:id/edit | resources#edit    | `Resource.find(id)` |
+| PATCH  | /resources/:id      | resources#update  | `Resource.find(id)` AND `Resource.update(attributes)` |
+| DELETE | /resources/:id      | resources#destroy | `Resource.find(id)` AND `Resource.destroy` |
 
 [More info REST pattern in Wiki ](https://en.wikipedia.org/wiki/Representational_state_transfer)
