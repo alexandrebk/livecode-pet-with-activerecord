@@ -1,8 +1,12 @@
-<h1>Pets</h1>
-<ul>
- <% @pets.each do |pet| %>
-   <li>
-     <%= pet.name %>
-   </li>
- <% end %>
-</ul>
+<div class="container">
+  <h1>Pets</h1>
+  <ul>
+    <% @pets.each do |pet| %>
+      <li>
+        <%= link_to pet.name, pet_path(pet) %>
+        |
+        <%= link_to "Delete", pet_path(pet), method: :delete %>
+      </li>
+    <% end %>
+  </ul>
+</div>
