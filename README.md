@@ -21,12 +21,12 @@
 
 | HTTP verb | Controller action |  ActiveRecord method |
 |--------|---------|---|
-| GET    | index   | all |
-| GET    | show    | find(id) |
-| GET    | new     | new(attributes) |
-| POST   | create  | create(attributes) |
-| GET    | edit    | find(id) |
-| PATCH  | update  | update(attributes) |
-| DELETE | destroy | destroy |
+| GET    | index   | `.all` |
+| GET    | show    | `.find(id)` |
+| GET    | new     | `.new` |
+| POST   | create  | `.create(attributes)` |
+| GET    | edit    | `.find(id)` |
+| PATCH  | update  | `.find(id)` AND `.update(attributes)` |
+| DELETE | destroy | `.find(id)` AND `.destroy` |
 
-[Wiki](https://en.wikipedia.org/wiki/Representational_state_transfer)
+[More info REST pattern in Wiki ](https://en.wikipedia.org/wiki/Representational_state_transfer)
